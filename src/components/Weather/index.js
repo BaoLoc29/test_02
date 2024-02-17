@@ -55,7 +55,7 @@ const Weather = () => {
                     <h2>{weatherData.name},{weatherData.sys.country}</h2>
                     <img src={getWeatherIcon(weatherData.weather[0].main)} alt='name-weather' />
                     <p>{weatherData.weather[0].main}</p>
-                    <p><i className="fa-solid fa-temperature-three-quarters"></i> {weatherData.main.temp}°C</p>
+                    <p className='temperature'><i className="fa-solid fa-temperature-three-quarters"></i> {weatherData.main.temp}°C</p>
                     <hr />
                     <p>Humidity: {weatherData.main.humidity}%</p>
                     <p>Pressure: {weatherData.main.pressure} hPa</p>
