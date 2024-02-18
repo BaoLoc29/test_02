@@ -52,7 +52,7 @@ const Weather = () => {
             )}
             {weatherData && !error && (
                 <div className='weather-result'>
-                    <h2>{weatherData.name},{weatherData.sys.country}</h2>
+                    <p>{weatherData.name},{weatherData.sys.country}</p>
                     <img src={getWeatherIcon(weatherData.weather[0].main)} alt='name-weather' />
                     <p>{weatherData.weather[0].main}</p>
                     <p className='temperature'><i className="fa-solid fa-temperature-three-quarters"></i> {weatherData.main.temp}°C</p>
